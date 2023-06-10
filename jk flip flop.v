@@ -69,3 +69,4 @@ always #25 clk <= ~clk;
 
 endmodule
 
+// check image here   https://github.com/prodhan2/DSD_verilog/blob/main/images/JK_ff_waveform.png
