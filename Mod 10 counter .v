@@ -21,12 +21,12 @@ input clr,clk;
 output [3:0]q,qb;
 //initial
 //q=4'b 0000;
-wire a;
+wire clr;
 //reg j=1;
-nand(a,q[1],q[3]);
+  nand(clr,q[1],q[3]);
 
-JKFF jk0(q[0],qb[0],1,1,a,clk);
-JKFF jk1(q[1],qb[1],1,1,a,q[0]);
-JKFF jk2(q[2],qb[2],1,1,a,q[1]);
-JKFF jk3(q[3],qb[3],1,1,a,q[2]);
+  JKFF jk0(q[0],qb[0],1,1,clr,clk);
+  JKFF jk1(q[1],qb[1],1,1,clr,q[0]);
+  JKFF jk2(q[2],qb[2],1,1,clr,q[1]);
+  JKFF jk3(q[3],qb[3],1,1,clr,q[2]);
 endmodule
