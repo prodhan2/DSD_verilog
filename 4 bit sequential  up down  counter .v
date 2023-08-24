@@ -1,3 +1,5 @@
+//for input 0000-1000-1100-1110-1111-0111-0011-0001-0000 sujan prodhan ru.cse-29
+
 module masterslavejkff(q, qb, j, k, clr, clk);
    
     output q, qb; 
